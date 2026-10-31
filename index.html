@@ -250,7 +250,7 @@ section{padding-block:120px}
 .znote .acts i{font-style:normal;font-weight:600;font-size:3.6cqw;padding:1.6cqw 3cqw;border-radius:2.2cqw;background:rgba(255,255,255,.16)}
 .znote time{font-size:3.2cqw;color:rgba(255,255,255,.6);margin-left:2cqw}
 .t-receipt{background:var(--screenwall)}
-.zrec{position:absolute;left:17cqw;width:66cqw;top:9cqw;transform:rotate(-3deg);background:var(--paper);color:var(--paper-fg);font:3.3cqw/1.65 var(--mono);padding:7cqw 5.5cqw 8cqw;white-space:nowrap;
+.zrec{position:absolute;left:17cqw;width:66cqw;top:7cqw;transform:rotate(-3deg) scale(.8);transform-origin:50% 0;background:var(--paper);color:var(--paper-fg);font:3.3cqw/1.65 var(--mono);padding:7cqw 5.5cqw 25cqw;white-space:nowrap;
   filter:drop-shadow(0 4cqw 6cqw rgba(0,0,0,.45));
   -webkit-mask:radial-gradient(circle at 1.4cqw 100%,transparent 1.1cqw,#000 1.2cqw) -1.4cqw 0/2.8cqw 100% repeat-x;mask:radial-gradient(circle at 1.4cqw 100%,transparent 1.1cqw,#000 1.2cqw) -1.4cqw 0/2.8cqw 100% repeat-x}
 .zrec::before{content:"";position:absolute;left:0;right:0;top:0;height:.9cqw;background:repeating-linear-gradient(90deg,var(--stripe) 0 5.2cqw,#F4F3EF 5.2cqw 10.4cqw)}
@@ -262,6 +262,7 @@ section{padding-block:120px}
 .zrec .bye{text-align:center;margin-top:2.4cqw}
 .stamp{position:absolute;left:33cqw;top:53cqw;transform:rotate(-14deg);color:#C42B1F;border:1.1cqw solid currentColor;border-radius:2.4cqw;padding:1.6cqw 4cqw 1.2cqw;text-align:center;
   font:800 7.6cqw/1 var(--ui);letter-spacing:.06em;opacity:.86;mix-blend-mode:multiply;filter:url(#rough)}
+.zrec .stamp{left:50%;top:auto;bottom:7cqw;transform:translateX(-50%) rotate(-7deg);font-size:6.4cqw}
 .stamp small{display:block;font:600 3.2cqw/1.2 var(--mono);letter-spacing:.14em;margin-top:1.2cqw}
 @media (max-width:760px){.alerts{grid-template-columns:minmax(0,1fr);grid-template-rows:none}.alerts .t-receipt{grid-column:auto;grid-row:auto}.alerts .t-note,.alerts .t-chip{aspect-ratio:2/1}}
 /* Panel detail: the pickup chip and its menu */
@@ -558,8 +559,8 @@ footer a:hover{color:var(--fg)}
           <div class="rl"><span>Biggest</span><span>Client edit v4.mov</span></div>
           <hr>
           <div class="bye">THANK YOU<br>Next pickup Tue Nov 3.</div>
+          <div class="stamp" aria-hidden="true">PICKED UP<small>TUE OCT 27</small></div>
         </div>
-        <div class="stamp" aria-hidden="true">PICKED UP<small>TUE OCT 27</small></div>
       </figure>
     </div>
   </div>
